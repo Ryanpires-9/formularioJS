@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Ryan Pires">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="IMG/form-svgrepo-com.svg">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/dados.css">
+        <title>Salvamento concluído!</title>
+    </head>
+    <body>
+        <div class="container card form">
+            <h3 style="text-align: center;">Dados Enviados!</h3>
+            <table class="table">
+                <tr>
+                    <td><p>Nome:</p></td>
+                    <td><p id="nome"></p></td>
+                </tr>
+                <tr>
+                    <td><p>Email:</p></td>
+                    <td><p id="txt_email"></p></td>
+                </tr>
+                <tr>
+                    <td><p>RG/CPF:</p></td>
+                    <td><p id="RgCPF"></p></td>
+                </tr>
+                <tr>
+                    <td><p>Carteira de Trabalho:</p></td>
+                    <td><p id="carteira"></p></td>
+                </tr>
+                <tr>
+                    <td><p>Telefone Celular:</p></td>
+                    <td><p id="cel"></p></td>
+                </tr>
+                <tr>
+                    <td><p>Gênero:</p></td>
+                    <td><p id="sexo"></p></td>
+                </tr>
+                <tr>
+                    <td><p>Data de Nascimento:</p></td>
+                    <td><p id="dataNasc" onload="formataData()"></p></td>
+                </tr>
+                <tr>
+                    <td><p>Escolaridade:</p></td>
+                    <td><p id="escola"></p></td>
+                </tr>
+                <tr>
+                    <td><p>Estado:</p></td>
+                    <td><p id="estado"></p></td>
+                </tr>
+                <tr>
+                    <td><p>CEP:</p></td>
+                    <td><p id="cep"></p></td>
+                </tr>
+                <tr>
+                    <td><p>Estado Civil:</p></td>
+                    <td><p id="estadoCiv"></p></td>
+                </tr>
+                <tr>
+                    <td><p>Tem filhos?</p></td>
+                    <td><p id="filhos"></p></td>
+                </tr>
+                <tr>
+                    <td><p>Situação de Trabalho:</p></td>
+                    <td><p id="emprego"></p></td>
+                </tr>
+                <tr>
+                    <td><p>Cobrança através do banco?</p></td>
+                    <td><p id="banco"></p></td>
+                </tr>  
+            </table>
+        </div>
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <script src="JS/dados.js"></script>
+        <script>  
+
+            function formataData() {
+                const date = new Date('dataNasc');
+                console.log(date.toLocaleDateString('pt-BR'));
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Ryan Pires">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="IMG/form-svgrepo-com.svg">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <div class="container card">
+            <form class="form" id="formulario" action="dados.html" method="get" enctype="application/x-www-form-urlencoded">
+                <div class="mb-3">
+                    <h1 style="text-align: center;">Formulário</h1>
+                    <div class="row">
+                        <div class="col-lg-8 col-sm-12">   
+                            <label for="formGroupExampleInput" class="form-label form-check ">Nome e Sobrenome</label>
+                            <div class="mb-3 form-check">
+                                <input type="text" name="nome" id="nome" class="nome form-control" value="" onchange="limpaErro()" placeholder="Digite o seu nome completo:" required>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <label for="formGroupExampleInput" class="form-label form-check ">RG ou CPF</label>
+                            <div class="mb-3 form-check">
+                                <input type="text" name="Rg_CPF" id="RgCPF" class="RgCPF form-control" value="" onchange="limpaErro()" placeholder="Digite o seu RG ou CPF:" required>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-xs-12">
+                            <label for="formGroupExampleInput" class="form-label form-check">Email</label>
+                            <div class="mb-3 form-check">
+                                <input type="email" name="email" id="txt_email" class="txt_email form-control" value="" onchange="limpaErro()" placeholder="Digite o seu email:" required>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-xs-12">
+                            <label for="formGroupExampleInput" class="form-label form-check">Carteira de Trabalho</label>
+                            <div class="mb-3 form-check">
+                                <input type="text" name="carteira" id="carteira" class="carteira form-control" value="" onchange="limpaErro()" placeholder="Digite a sua carteira de trabalho:" required>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-xs-12">
+                            <label for="formGroupExampleInput" class="form-label form-check">Telefone Celular</label>
+                            <div class="mb-3 form-check">
+                                <input type="tel" name="cel" id="cel" class="cel form-control" value="" maxlength="13" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" onchange="limpaErro()" placeholder="Formato: XX XXXXX-XXXX" required>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-xs-12">
+                            <div class="mb-3 form-check">
+                                <label for="formGroupExampleInput" style="margin-bottom: 3px;">Gênero</label>
+                                <select class="form-select" name="sexo" id="sexo" class="sexo" aria-label="Default select example" required>
+                                    <option disabled selected>Selecione o seu sexo:</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Feminino">Feminino</option>
+                                </select>                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-3">
+                            <label for="formGroupExampleInput" class="form-label form-check">Data de Nascimento</label>
+                            <div class="mb-3 form-check">
+                                <input type="date" name="dataNasc" id="dataNasc" class="dataNasc form-control" value="" onchange="limpaErro()" required>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="mb-3 form-check">
+                                <label for="formGroupExampleInput" style="margin-bottom: 3px;">Escolaridade</label>
+                                <select class="form-select" name="escola" id="escola" class="escola" aria-label="Default select example" required>
+                                    <option disabled selected>Selecione a sua escolaridade:</option>
+                                    <option value="Educação Infantil">Educação Infantil</option>
+                                    <option value="Ensino Fundamental">Ensino Fundamental</option>
+                                    <option value="Ensino Médio">Ensino Médio</option>
+                                    <option value="Ensino Superior (Graduação)">Ensino Superior (Graduação)</option>
+                                    <option value="Pós-Graduação">Pós-Graduação</option>
+                                    <option value="Mestrado">Mestrado</option>
+                                    <option value="Doutorado">Doutorado</option>
+                                </select>                
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-12">
+                            <div class="mb-3 form-check">
+                                <label for="formGroupExampleInput" style="margin-bottom: 3px;">Estado</label>
+                                <select class="form-select" name="estado" id="estado" class="estado" aria-label="Size 5 select example" required>
+                                    <option value="" disabled selected>Selecione o seu Estado:</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espirito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12">
+                            <label for="formGroupExampleInput" class="form-label form-check">CEP</label>
+                            <div class="mb-3 form-check">
+                                <input type="text" name="cep" id="cep" class="cep form-control" maxlength="9" pattern="[0-9]{5}-[0-9]{3}" value="" onchange="limpaErro()" placeholder="Formato: XXXXX-XXX" required>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-12">
+                            <div class="mb-3 form-check">
+                                <label for="formGroupExampleInput" style="margin-bottom: 3px;">Estado Civil</label>
+                                <select class="form-select" name="estadoCiv" id="estadoCiv" class="estadoCiv" aria-label="Default select example" required>
+                                    <option disabled selected>Selecione o seu estado civil:</option>
+                                    <option value="Solteiro">Solteiro</option>
+                                    <option value="Casado">Casado</option>
+                                    <option value="Divorciado">Divorciado</option>
+                                    <option value="Viúvo">Viúvo</option>
+                                </select>                
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <div class="mb-3 form-check">
+                                <label for="formGroupExampleInput" style="margin-bottom: 3px;">Têm filhos?</label>
+                                <select class="form-select" name="filhos" id="filhos" class="filhos" aria-label="Default select example" required>
+                                    <option disabled selected> - </option>
+                                    <option value="Sim">Sim</option>
+                                    <option value="Não">Não</option>
+                                </select>                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <div class="mb-3 form-check">
+                                <label for="formGroupExampleInput" style="margin-bottom: 3px;">Situação de trabalho</label>
+                                <select class="form-select" name="emprego" id="emprego" class="emprego" aria-label="Default select example" required>
+                                    <option disabled selected>Selecione a sua situação</option>
+                                    <option value="Desempregado">Desempregado</option>
+                                    <option value="Trabalhando">Trabalhando</option>
+                                </select>                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <label for="formGroupExampleInput" style="margin-bottom: 3px; margin-left: 2%;">Cobrança através de um banco?</label>
+                            <div class="form-check form-check-inline">
+                                <input class="mb-3 form-check-input" id="banco" value="Sim" type="radio" name="banco">
+                                <label  class="form-check-label" for="inlineRadio1">Sim</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="mb-3 form-check-input" id="banco" value="Não" type="radio" name="banco">
+                                <label class="form-check-label" for="inlineRadio2">Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" name="check" id="check" class="check" value="" required>
+                        <span></span>
+                        <label for="formGroupExampleInput" class="form-label">Confirmar</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <input type="submit" class="btn btn-primary" name="cad" id="cad" value="Enviar" onclick="Campo()">
+                        </div>
+                    </div> 
+                </div>
+            </form>
+        </div>
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <script src="JS/index.js"></script>
+    </body>
+</html>

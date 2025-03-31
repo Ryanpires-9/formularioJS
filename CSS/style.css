@@ -1,0 +1,19 @@
+body {
+    margin-top: 5%;
+    background-image: URL("../IMG/background.jpg");
+}
+
+.card {
+    border-radius: 5px;
+    padding-top: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 575px) {  
+    body {
+        margin-top: 0;
+    }
+}

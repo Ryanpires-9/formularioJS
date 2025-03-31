@@ -1,0 +1,41 @@
+.card {
+    width: 40%;
+}
+@media (max-width: 1000px) {  
+    .card {
+        width: 50%;
+    }
+}
+@media (max-width: 825px) {  
+    .card {
+        width: 60%;
+    }
+}
+@media (max-width: 650px) {  
+    .card {
+        width: 70%;
+    }
+}
+@media (max-width: 575px) {  
+    .card {
+        width: 100%;
+    }
+}
+@media (max-width: 325px) {  
+    table {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width: 370px) {  
+    p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 340px) {  
+    p {
+        font-size: 13px;
+    }
+}
