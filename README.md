@@ -1,5 +1,5 @@
 <h2>First time doing a Formulary</h2>
-<p>I created this formulary with JavaScript, pretty simple and fun!</p>
+<p>I created this formulary with JavaScript, pretty simple and fun! This was created in PW1 class in 2024</p>
 
 <figure>
   <img src="IMG/JSform.png">
